@@ -1,0 +1,68 @@
+// Variables
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+// Font-awesome
+@import '~font-awesome/scss/font-awesome.scss';
+
+// Highlight.js CSS
+@import '~highlightjs/styles/github.css';
+
+// GitHub Markdown CSS
+@import '~github-markdown-css/github-markdown.css';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom styles
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#app, #main, #sidebar, #content {
+  height: 100%;
+  overflow: hidden;
+}
+
+.toolbar {
+  height: 48px;
+  max-height: 48px;
+}
+
+.note-list {
+  height: calc(100% - 48px);
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}
+
+ul.note-list.list-group .list-group-item {
+  cursor: pointer;
+
+  @include hover-focus {
+    background-color: $list-group-active-bg;
+  }
+
+  &:first-child {
+    border-top: none !important;
+  }
+  &:last-child {
+    border-bottom: $list-group-border-width solid $list-group-border-color;
+  }
+}
+
+.editor {
+  height: calc(100% - 48px);
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+.note-pad, .note-preview {
+  height: calc(100vh - 48px);
+  resize: none;
+  width: 100%;
+  overflow-y: scroll !important;
+  outline: 0 !important;
+}
