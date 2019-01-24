@@ -35,6 +35,11 @@
 13. Note editor (textarea).
 14. Live preview.
 
+
+## Please note
+This application is just a proof of concept and is not quite ready for production use. It needs a bit cleaning, and no tests are provided.
+
+
 ## Credits
 
 [Unsplash](https://unsplash.com)
