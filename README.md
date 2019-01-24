@@ -31,7 +31,7 @@
 9. Delete the selected note.
 10. Logout from current session.
 11. The light gray background indicates selected note.
-12. The 'Heart' shape icon suggest a favorited note.
+12. The 'Heart' shape icon suggests a favorited note.
 13. Note editor (textarea).
 14. Live preview.
 
